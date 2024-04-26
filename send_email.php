@@ -12,9 +12,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if (mail($to_email, $subject, $body, $headers)) {
-        echo "Message sent successfully.";
+        echo "Message sent successfully";
     } else {
-        echo "Failed to send message. Please try again later.";
+        echo "Failed to send message. Please try again later";
     }
 }
 ?>
