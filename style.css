@@ -637,3 +637,26 @@ form .send-btn:hover{
         margin: 0 auto; /* Center align form */
     }
 }
+
+body, html {
+    height: 100vh;
+}
+
+.container {
+    display: flex; /* หรือ display: grid; */
+    justify-content: center; /* ใช้ flexbox */
+    align-items: center; /* ใช้ flexbox */
+    /* หรือ */
+    /* justify-items: center; */ /* ใช้ grid */
+    /* align-items: center; */ /* ใช้ grid */
+    height: 100%; /* ใช้เพื่อให้ container มีความสูงเท่ากับหน้าจอ */
+}
+.container {
+    display: flex; /* หรือ display: grid; */
+    justify-content: center; /* ใช้ flexbox */
+    align-items: center; /* ใช้ flexbox */
+    /* หรือ */
+    /* justify-items: center; */ /* ใช้ grid */
+    /* align-items: center; */ /* ใช้ grid */
+    height: 100%; /* ใช้เพื่อให้ container มีความสูงเท่ากับหน้าจอ */
+}
