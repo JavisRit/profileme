@@ -482,22 +482,89 @@ form .send-btn:hover{
 
     /* Education section */
     .education-content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
+        display: block; /* Display education content as block */
     }
 
     /* Portfolio section */
     .Portfolio-content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
+        display: block; /* Display portfolio content as block */
     }
 
     /* Activities section */
     .activities-content {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
+        display: block; /* Display activities content as block */
     }
 
     /* Contact section */
     .contact-form {
         width: 90%; /* Adjust form width */
         margin: 0 auto; /* Center align form */
+    }
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none; /* Hide the menu icon by default */
+}
+
+.menu-icon-bar {
+    width: 35px;
+    height: 5px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate the first and third bars to create an X icon */
+#menu-icon.active .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 7px);
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+
+#menu-icon.active .bar2 {
+    opacity: 0;
+}
+
+#menu-icon.active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust menu icon size for mobile devices */
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+        position: absolute;
+        top: 80px; /* Adjust based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: var(--second-bg-color);
+        padding: 20px;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navlist.show {
+        display: block;
+    }
+
+    .navlist li {
+        margin-bottom: 20px;
+    }
+
+    .navlist a {
+        color: var(--text-color);
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .navlist a:hover {
+        color: var(--main-color);
     }
 }

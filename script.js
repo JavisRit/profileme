@@ -4,6 +4,13 @@ window.addEventListener ("scroll", function() {
     header.classList.toggle ("sticky", window.scrollY > 120);
 });
 
+const menuIcon = document.getElementById('menu-icon');
+const navList = document.querySelector('.navlist');
+
+menuIcon.addEventListener('click', function() {
+    navList.classList.toggle('show');
+});
+
 const submitBtn = document.getElementById('submit-btn');
 
 submitBtn.addEventListener('click', function(event) {
