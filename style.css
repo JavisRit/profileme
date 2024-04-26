@@ -568,3 +568,72 @@ form .send-btn:hover{
         color: var(--main-color);
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 20px 8%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navlist {
+        display: none; /* Hide navlist */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon */
+    }
+
+    .hero .main-content {
+        text-align: center; /* Center align text */
+    }
+
+    .social {
+        display: flex;
+        justify-content: center; /* Center align social icons */
+        margin-top: 20px;
+    }
+
+    .social i {
+        margin: 0 10px; /* Adjust spacing between social icons */
+    }
+
+    /* About section */
+    .about {
+        grid-template-columns: 1fr; /* Display about section in one column */
+    }
+
+    .about-img img {
+        width: 80%; /* Reduce image size */
+        max-width: 300px;
+        margin: 0 auto; /* Center align image */
+    }
+
+    .about-text {
+        text-align: center; /* Center align text */
+    }
+
+    /* Education section */
+    .education-content {
+        display: block; /* Display education content as block */
+    }
+
+    /* Portfolio section */
+    .Portfolio-content {
+        display: block; /* Display portfolio content as block */
+    }
+
+    /* Activities section */
+    .activities-content {
+        display: block; /* Display activities content as block */
+    }
+
+    /* Contact section */
+    .contact-form {
+        width: 90%; /* Adjust form width */
+        margin: 0 auto; /* Center align form */
+    }
+}
