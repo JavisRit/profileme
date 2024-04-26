@@ -482,17 +482,17 @@ form .send-btn:hover{
 
     /* Education section */
     .education-content {
-        grid-template-columns: 1fr; /* Display education section in one column */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
     }
 
     /* Portfolio section */
     .Portfolio-content {
-        grid-template-columns: 1fr; /* Display portfolio section in one column */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
     }
 
     /* Activities section */
     .activities-content {
-        grid-template-columns: 1fr; /* Display activities section in one column */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns */
     }
 
     /* Contact section */
@@ -500,10 +500,4 @@ form .send-btn:hover{
         width: 90%; /* Adjust form width */
         margin: 0 auto; /* Center align form */
     }
-}
-
-/* For larger screens (computers) */
-@media screen and (min-width: 769px) {
-    /* Adjustments for larger screens can remain as they are */
-    /* No changes required */
 }
