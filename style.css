@@ -432,3 +432,67 @@ form .send-btn:hover{
     font-size: 27px;
 }
 
+@media screen and (max-width: 768px) {
+    /* เมนู Navigation */
+    .navlist {
+      display: none; /* ซ่อนเมนูเมื่อไม่มีการแสดงผล */
+      flex-direction: column; /* จัดเรียงเป็นคอลัมน์ */
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: var(--bg-color);
+      z-index: 999;
+      overflow-y: auto;
+      padding-top: 80px; /* พื้นที่บริเวณด้านบนของเมนู */
+      transition: all 0.3s ease;
+    }
+  
+    .navlist.active {
+      display: flex; /* แสดงเมนูเมื่อมีการแสดงผล */
+    }
+  
+    .navlist li {
+      text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+      margin: 20px 0; /* ระยะห่างระหว่างรายการเมนู */
+    }
+  
+    .navlist a {
+      margin: 0; /* ลบการขยับระยะห่างทางด้านซ้ายของรายการเมนู */
+    }
+  
+    /* ปุ่มเมนู Mobile */
+    #menu-icon {
+      display: block; /* แสดงปุ่มเมนูในโหมดขนาดหน้าจอเล็ก */
+    }
+  
+    .logo {
+      margin-left: 20px; /* ขยับโลโก้ไปทางขวาเล็กน้อย */
+    }
+  
+    /* รูปภาพและเนื้อหา */
+    .about,
+    .education,
+    .portfolio,
+    .activities,
+    .contact {
+      padding: 80px 10%; /* ปรับขนาดการระบุขอบของเนื้อหา */
+    }
+  
+    /* ภาพในส่วน Portfolio และ Activities */
+    .Portfolio-content .row img,
+    .activities-content .row img {
+      width: 100%; /* ขยายภาพให้เต็มขนาด */
+    }
+  
+    /* ส่วน Footer */
+    .footer {
+      padding: 22px 5%; /* ปรับขนาดการระบุขอบของ Footer */
+    }
+  
+    /* ปุ่ม Scroll-to-Top */
+    .scroll-top {
+      right: 10px; /* ขยับปุ่มไปทางขวาเล็กน้อย */
+    }
+  }
