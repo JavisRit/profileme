@@ -432,67 +432,78 @@ form .send-btn:hover{
     font-size: 27px;
 }
 
+/* For mobile devices */
 @media screen and (max-width: 768px) {
-    /* เมนู Navigation */
-    .navlist {
-      display: none; /* ซ่อนเมนูเมื่อไม่มีการแสดงผล */
-      flex-direction: column; /* จัดเรียงเป็นคอลัมน์ */
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 100%;
-      background: var(--bg-color);
-      z-index: 999;
-      overflow-y: auto;
-      padding-top: 80px; /* พื้นที่บริเวณด้านบนของเมนู */
-      transition: all 0.3s ease;
+    /* Header */
+    header {
+        padding: 20px 8%;
     }
-  
-    .navlist.active {
-      display: flex; /* แสดงเมนูเมื่อมีการแสดงผล */
-    }
-  
-    .navlist li {
-      text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
-      margin: 20px 0; /* ระยะห่างระหว่างรายการเมนู */
-    }
-  
-    .navlist a {
-      margin: 0; /* ลบการขยับระยะห่างทางด้านซ้ายของรายการเมนู */
-    }
-  
-    /* ปุ่มเมนู Mobile */
-    #menu-icon {
-      display: block; /* แสดงปุ่มเมนูในโหมดขนาดหน้าจอเล็ก */
-    }
-  
+
     .logo {
-      margin-left: 20px; /* ขยับโลโก้ไปทางขวาเล็กน้อย */
+        font-size: 24px;
     }
-  
-    /* รูปภาพและเนื้อหา */
-    .about,
-    .education,
-    .portfolio,
-    .activities,
-    .contact {
-      padding: 80px 10%; /* ปรับขนาดการระบุขอบของเนื้อหา */
+
+    .navlist {
+        display: none; /* Hide navlist */
     }
-  
-    /* ภาพในส่วน Portfolio และ Activities */
-    .Portfolio-content .row img,
-    .activities-content .row img {
-      width: 100%; /* ขยายภาพให้เต็มขนาด */
+
+    #menu-icon {
+        display: block; /* Show menu icon */
     }
-  
-    /* ส่วน Footer */
-    .footer {
-      padding: 22px 5%; /* ปรับขนาดการระบุขอบของ Footer */
+
+    .hero .main-content {
+        text-align: center; /* Center align text */
     }
-  
-    /* ปุ่ม Scroll-to-Top */
-    .scroll-top {
-      right: 10px; /* ขยับปุ่มไปทางขวาเล็กน้อย */
+
+    .social {
+        display: flex;
+        justify-content: center; /* Center align social icons */
+        margin-top: 20px;
     }
-  }
+
+    .social i {
+        margin: 0 10px; /* Adjust spacing between social icons */
+    }
+
+    /* About section */
+    .about {
+        grid-template-columns: 1fr; /* Display about section in one column */
+    }
+
+    .about-img img {
+        width: 80%; /* Reduce image size */
+        max-width: 300px;
+        margin: 0 auto; /* Center align image */
+    }
+
+    .about-text {
+        text-align: center; /* Center align text */
+    }
+
+    /* Education section */
+    .education-content {
+        grid-template-columns: 1fr; /* Display education section in one column */
+    }
+
+    /* Portfolio section */
+    .Portfolio-content {
+        grid-template-columns: 1fr; /* Display portfolio section in one column */
+    }
+
+    /* Activities section */
+    .activities-content {
+        grid-template-columns: 1fr; /* Display activities section in one column */
+    }
+
+    /* Contact section */
+    .contact-form {
+        width: 90%; /* Adjust form width */
+        margin: 0 auto; /* Center align form */
+    }
+}
+
+/* For larger screens (computers) */
+@media screen and (min-width: 769px) {
+    /* Adjustments for larger screens can remain as they are */
+    /* No changes required */
+}
